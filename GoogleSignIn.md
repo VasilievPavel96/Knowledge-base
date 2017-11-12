@@ -28,7 +28,8 @@ override fun onStart() {
 override fun onStop() {
     super.onStop()
     googleApiClient.disconnect()
-}```
+}
+```
 ## Setup listeners on buttons
 ```kotlin
 signInButton.setOnClickListener {
