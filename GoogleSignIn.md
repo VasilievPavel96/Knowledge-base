@@ -1,7 +1,7 @@
 # Google sign in
 
-## Get configuration file from here [](https://goo.gl/vqTC36)
-Copy the google-services.json file you just downloaded into the app/ folder
+## Get configuration file 
+Copy the [google-services.json](https://goo.gl/vqTC36) file you just downloaded into the app/ folder
 ## Add dependencies to build.gradle
 1. Add the dependency to your project-level build.gradle
 `classpath 'com.google.gms:google-services:3.1.0'`
