@@ -18,7 +18,7 @@ val googleApiClient = GoogleApiClient.Builder(this)
         .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
         .build()
 ```
-## Connect the client to Google Play services in onStart and disconect in onStop.
+## Connect the client to Google Play services in onStart and disconnect in onStop.
 ```kotlin
 override fun onStart() {
     super.onStart()
