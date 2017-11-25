@@ -10,7 +10,8 @@ Task in gradle is atomic unit of work, that can have input/output and depend on 
 Task consist of action and dependencies.
 ## Properties
 * You can define properties that can be access anywhere in build.gradle. This can be library version, filename etc.
-```groovy project.ext.foo = "foo"
+```groovy 
+project.ext.foo = "foo"
 ext {
   retrofit_version = "2.3.0"
 }
