@@ -7,7 +7,23 @@ Gradle is build tool, that helps you automate many things like: compiling your c
 `gradle taskName -q` - display only task output
 ## Tasks
 Task in gradle is atomic unit of work, that can have input/output and depend on other tasks.  
-Task consist of action and dependencies.
+Task consist of action and dependencies. You can create own typed task by extending DefaultTask class.
+```groovy
+class CustomTask extends DefaultTask{
+@Input String foo
+@OutputDirectory File propsDir
+@TaskAction
+void onAction{
+  // some code
+}
+}
+```
+Or create ad-hoc task to project.
+```groovy
+task printVersion{
+ println version
+}
+```
 ## Properties
 * You can define properties that can be access anywhere in build.gradle. This can be library version, filename etc.
 ```groovy 
